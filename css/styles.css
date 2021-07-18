@@ -1,0 +1,194 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Debut entête */
+
+.header {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: url("../images/undraw_pitching_36ol.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.image-header {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 960px) {
+    .image-header {
+        display: block;
+        width: 200px;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        z-index: 0;
+    }
+    .header {
+        background-image: none;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+.header a {
+    color: white;
+    z-index: 1;
+}
+
+.head, .header a:hover {
+    color: rgb(0, 119, 255);
+    z-index: 1;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    margin-top: -100px;
+}
+
+/* fin entête */
+
+/* Bouton Suivant  */
+
+.header .next {
+    position: absolute;
+    top: 80%;
+    left: 42%;
+    
+}
+
+@media screen and (min-width: 320px) and (max-width: 960px) {
+    .header .next {
+        display: block;
+        position: absolute;
+        left: 20%;
+        top: 87%;
+    }
+}
+
+.page {
+    color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Contenu des pages */
+
+.contenu {
+    background-color: transparent !important;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+@media screen and (min-width: 320px) and (max-width: 960px) {
+    .contenu {
+        width: 80%;
+    }
+}
+.next {
+    z-index: 1;
+}
+
+.compet-fond {
+    background-image: url("../images/undraw_programming_2svr.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.09;
+}
+
+.projet-fond {
+    background-image: url("../images/undraw_code_typing_7jnv.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.09;
+}
+.ui.card>.image>img, .ui.cards>.card>.image>img  {
+    height: 280px;
+}
+.ui.card:last-child {
+    height: 500px;
+    border: 1px black solid;
+}
+.owl-carousel .owl-stage-outer {
+    margin: 0 30px 0 40px;
+}
+.student-fond {
+    background-image: url("../images/undraw_certificate_343v.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.09;
+}
+
+.exp-fond {
+    background-image: url("../images/undraw_quitting_time_dm8t.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.09;
+}
+
+/* Page erreur 404  */
+
+.error404 {
+    background-image: url("../images/undraw_page_not_found_su7k.svg");
+    background-position: center;
+    height: 60%;
+    opacity: 0.70;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 960px) {
+    .button {
+        margin-left: 28%;
+    }
+}
+footer {
+    background-color: black;
+    color: white;
+}
